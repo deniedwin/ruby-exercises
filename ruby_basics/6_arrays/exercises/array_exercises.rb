@@ -46,29 +46,36 @@ def remove_first_three_elements(array)
 end
 
 def array_concatenation(original, additional)
+  return original + additional
   # return an array adding the original and additional array together
 end
 
 def array_difference(original, comparison)
+  return original - comparison
   # return an array of elements from the original array that are not in the comparison array
 end
 
 def empty_array?(array)
+  return array.empty?
   # return true if the array is empty
 end
 
 def reverse(array)
+  return array.reverse
   # return the reverse of the array
 end
 
 def array_length(array)
+  return array.length
   # return the length of the array
 end
 
 def include?(array, value)
+  return array.include?(value)
   # return true if the array includes the value
 end
 
 def join(array, separator)
+  return array.join(separator)
   # return the result of joining the array with the separator
 end
