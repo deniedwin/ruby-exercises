@@ -7,7 +7,7 @@
 # return value: the number's ASCII character (https://www.ascii-code.com/)
 # hint: use Integer#chr
 def ascii_translator(number)
-  return number.chr
+  number.chr
 end
 
 # method name: #common_sports
@@ -15,7 +15,7 @@ end
 # return value: an array containing items in both arrays
 # hint: use Array#intersection
 def common_sports(current_sports, favorite_sports)
-  return current_sports.intersection(favorite_sports)
+  current_sports.intersection(favorite_sports)
 end
 
 # method name: #alphabetical_list
@@ -23,13 +23,15 @@ end
 # return value: games, alphabetically sorted and duplicates removed
 # hint: chain Array#uniq and Array#sort together
 def alphabetical_list(games)
-  return games.uniq.sort
+  games.uniq.sort
 end
 
 # method name: #lucky_number
 # parameter: number (an integer) with default value of 7
 # return value: a string "Today's lucky number is <number>"
-
+def lucky_number(number = 7)
+  "Today's lucky number is #{number}"
+end
 
 # method name: #ascii_code
 # parameter: character (a string)
