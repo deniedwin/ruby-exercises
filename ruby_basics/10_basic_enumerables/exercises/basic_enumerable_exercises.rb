@@ -1,4 +1,7 @@
 def display_current_inventory(inventory_list)
+  inventory_list.each do |k,v|
+    puts "#{k}, quantity: #{v}"
+  end
   # use #each to iterate through each item of the inventory_list (a hash)
   # use puts to output each list item "<key>, quantity: <value>" to console
 end
