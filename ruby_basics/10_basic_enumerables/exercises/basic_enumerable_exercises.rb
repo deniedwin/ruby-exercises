@@ -7,12 +7,18 @@ def display_current_inventory(inventory_list)
 end
 
 def display_guess_order(guesses)
+  guesses.each_with_index do |v,i|
+    puts "Guess ##{i+1} is #{v}"
+  end
   # use #each_with_index to iterate through each item of the guesses (an array)
   # use puts to output each list item "Guess #<number> is <item>" to console
   # hint: the number should start with 1
 end
 
 def find_absolute_values(numbers)
+  numbers.map do |v|
+    v.abs
+  end
   # use #map to iterate through each item of the numbers (an array)
   # return an array of absolute values of each number
 end
