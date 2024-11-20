@@ -1,4 +1,5 @@
 def coffee_drink?(drink_list)
+  drink_list.any?{|item| item == "coffee" || item == "espresso"}
   # use #include? to return true when the drink_list (array) contains the string "coffee" or "espresso"
 end
 
