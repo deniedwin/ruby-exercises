@@ -23,5 +23,8 @@ def correct_format?(word_list)
 end
 
 def valid_scores?(score_list, perfect_score)
+  score_list.one? do |key, value|
+    value == perfect_score
+  end
   # use #one? to return true when only one value in the score_list (hash) is equal to the perfect_score (number)
 end
